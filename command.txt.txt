@@ -1,0 +1,44 @@
+Django Command
+
+1. Create Environment
+
+python -m virtualenv venv
+venv\scripts\activate
+
+2. Create Project
+
+django-admin startproject projectname
+python manage.py startapp appname
+
+
+3. This use for get ip 
+
+ipconfig
+
+
+4. run project
+
+python manage.py runserver 192.168.100.164:8000
+
+
+5. Install & Store Library in Requestments file
+
+pip install -r requirements.txt
+pip freeze> requirements.txt
+
+
+6. Models Command to Table
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+7. This use for run celery task 
+
+celery -A ixract.celery worker --pool=solo -l info
+
+
+
+
+
+
