@@ -63,6 +63,10 @@ pip install -r requirements.txt
 --->  Run Command  <---
 uvicorn main:app --reload
 
+# This run command work with logs
+fastapi dev main.py
+fastapi dev main.py --host 192.168.0.42 --port 8000
+
 ----> Ip Address Used <----
 uvicorn main:app --host 127.0.0.1 --port 8000
 
